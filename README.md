@@ -18,13 +18,15 @@ create table public."Contacts" (
   telephone text not null,
   constraint Contacts_pkey primary key (id)
 );
+```
+
 Insira alguns contatos para teste.
 
 2. Variáveis de ambiente
 Crie um arquivo .env na raiz do projeto com as seguintes variáveis:
 
 env
-
+```
 # Supabase
 SUPABASE_URL=https://dsegwewpiaixqgdxoibq.supabase.co
 SUPABASE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRzZWd3ZXdwaWFpeHFnZHhvaWJxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTQ5OTgyNDksImV4cCI6MjA3MDU3NDI0OX0.e4pZFNHQTxdhnLyU8q-YnNOPmej7XJUJqKfCkXic_-M
@@ -34,6 +36,8 @@ SUPABASE_TABELA=Contacts
 ZAPI_INSTANCE_ID=3E59ABD4498B90904406CA4350A8658A
 ZAPI_TOKEN=5D9092AD2F317BECCA46060C
 ZAPI_CLIENT_TOKEN=F0329a0da66984652befc4f2f88299391S
+```
+
 Não compartilhe este arquivo em repositórios públicos!
 
 🚀 Rodando o projeto
@@ -42,12 +46,15 @@ Instale dependências:
 
 bash
 
+```
 pip install -r requirements.txt
+```
 
 Execute o script principal:
 
 bash
 
+```
 python main.py
-
+```
 O script buscará os contatos no Supabase e enviará mensagens via Z-API.# ConectaZap
